@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.16
+FROM linuxserver/baseimage
 MAINTAINER smdion <me@seandion.com>
 MAINTAINER Mark Burford <sparklyballs@gmail.com>
 
