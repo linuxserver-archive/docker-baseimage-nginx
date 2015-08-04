@@ -18,13 +18,13 @@ nginx \
 php5-fpm \
 php5-mysql \
 php5 \
+php5-cli \
 inotify-tools -y && \
 apt-get clean -y && \
-mkdir -p /defaults
 rm -rf /var/lib/apt/lists/*
 
-
 #Adding Custom files
+RUN mkdir -p /defaults
 ADD defaults/nginx.conf /defaults/nginx.conf 
 ADD defaults/nginx-fpm.conf /defaults/nginx-fpm.conf
 ADD services/ /etc/service/
