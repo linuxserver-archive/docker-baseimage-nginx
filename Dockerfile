@@ -23,6 +23,10 @@ inotify-tools -y && \
 apt-get clean -y && \
 rm -rf /var/lib/apt/lists/*
 
+#Adduser abc
+RUN useradd -u 911 -U -s /bin/false abc
+RUN usermod -G users abc
+
 #Adding Custom files
 RUN mkdir -p /defaults
 ADD defaults/nginx.conf /defaults/nginx.conf 
