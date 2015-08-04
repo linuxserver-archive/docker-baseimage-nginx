@@ -1,11 +1,8 @@
 FROM linuxserver/baseimage
 MAINTAINER smdion <me@seandion.com>
 MAINTAINER Mark Burford <sparklyballs@gmail.com>
+MAINTAINER Stian Larsen	<lonix@linuxserver.io>
 
-# Set correct environment variables
-ENV HOME /root
-ENV DEBIAN_FRONTEND noninteractive
-ENV TERM screen
 
 # expose ports
 EXPOSE 80
@@ -25,9 +22,6 @@ inotify-tools -y && \
 apt-get clean -y && \
 rm -rf /var/lib/apt/lists/*
 
-#Adduser abc
-RUN useradd -u 911 -U -s /bin/false abc
-RUN usermod -G users abc
 
 #Adding Custom files
 ADD defaults/nginx.conf /root/config-files/nginx.conf 
