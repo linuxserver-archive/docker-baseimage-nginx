@@ -20,12 +20,13 @@ php5-mysql \
 php5 \
 inotify-tools -y && \
 apt-get clean -y && \
+mkdir -p /defaults
 rm -rf /var/lib/apt/lists/*
 
 
 #Adding Custom files
-ADD defaults/nginx.conf /root/config-files/nginx.conf 
-ADD defaults/nginx-fpm.conf /root/config-files/nginx-fpm.conf
+ADD defaults/nginx.conf /defaults/nginx.conf 
+ADD defaults/nginx-fpm.conf /defaults/nginx-fpm.conf
 ADD services/ /etc/service/
 ADD init/ /etc/my_init.d/
 RUN chmod -v +x /etc/service/*/run
