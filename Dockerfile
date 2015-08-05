@@ -30,8 +30,7 @@ RUN usermod -G users abc
 
 #Adding Custom files
 RUN mkdir -p /defaults
-ADD defaults/nginx.conf /defaults/nginx.conf 
-ADD defaults/nginx-fpm.conf /defaults/nginx-fpm.conf
+ADD defaults/ /defaults/ 
 ADD services/ /etc/service/
 ADD init/ /etc/my_init.d/
 RUN chmod -v +x /etc/service/*/run
