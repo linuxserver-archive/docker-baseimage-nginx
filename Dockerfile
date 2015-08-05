@@ -15,11 +15,8 @@ apt-get install \
 nginx \
 openssl \
 php5-fpm \
-php5-mysql \
 php5 \
-php5-cli \
-php5-mcrypt \
-php5-curl -y && \
+php5-cli -qy && \
 apt-get clean -y && \
 rm -rf /var/lib/apt/lists/*
 
