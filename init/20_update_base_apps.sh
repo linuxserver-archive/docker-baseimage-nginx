@@ -7,4 +7,5 @@ php5-fpm \
 php5-mysql \
 php5-cli \
 php5 \
-inotify-tools -qqy
+php5-mcrypt \
+php5-curl -qqy
