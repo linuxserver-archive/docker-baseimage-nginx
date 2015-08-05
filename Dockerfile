@@ -13,6 +13,7 @@ VOLUME /config
 RUN apt-get update && \
 apt-get install \
 nginx \
+openssl \
 php5-fpm \
 php5-mysql \
 php5 \
