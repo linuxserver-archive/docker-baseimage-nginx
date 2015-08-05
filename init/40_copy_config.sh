@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir -p /config/nginx/site-confs /config/www
+mkdir -p /config/nginx/site-confs /config/www /config/log/nginx
 
 if [ ! -f "/config/nginx/nginx.conf" ]; then
 cp /defaults/nginx.conf /config/nginx/nginx.conf
