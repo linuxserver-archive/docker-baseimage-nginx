@@ -1,7 +1,5 @@
 FROM linuxserver/baseimage
-MAINTAINER smdion <me@seandion.com>
-MAINTAINER Mark Burford <sparklyballs@gmail.com>
-MAINTAINER Stian Larsen	<lonix@linuxserver.io>
+MAINTAINER smdion <me@seandion.com>, Mark Burford <sparklyballs@gmail.com>, Stian Larsen <lonix@linuxserver.io>, Kode <kodestar@linuxserver.io>
 
 
 # expose ports
