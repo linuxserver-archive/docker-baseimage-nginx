@@ -19,7 +19,8 @@ php5-fpm \
 php5-mysql \
 php5 \
 php5-cli \
-inotify-tools -y && \
+php5-mcrypt \
+php5-curl -y && \
 apt-get clean -y && \
 rm -rf /var/lib/apt/lists/*
 
