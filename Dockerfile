@@ -1,7 +1,8 @@
 FROM linuxserver/baseimage
 MAINTAINER smdion <me@seandion.com>, Mark Burford <sparklyballs@gmail.com>, Stian Larsen <lonix@linuxserver.io>, Kode <kodestar@linuxserver.io>
+ENV BASE_APTLIST="nginx openssl php5-fpm php5 php5-cli"
 RUN apt-get update && \
-apt-get install nginx openssl php5-fpm php5 php5-cli -qy && \
+apt-get install $BASE_APTLIST -qy && \
 apt-get clean -y && rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /defaults
 ADD defaults/ /defaults/ 
