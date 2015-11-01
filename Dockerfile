@@ -1,5 +1,5 @@
 FROM linuxserver/baseimage
-MAINTAINER smdion <me@seandion.com>, Mark Burford <sparklyballs@gmail.com>, Stian Larsen <lonix@linuxserver.io>, Kode <kodestar@linuxserver.io>
+MAINTAINER smdion <me@seandion.com>, Sparklyballs <sparklyballs@linuxserver.io>, Stian Larsen <lonix@linuxserver.io>, Kode <kodestar@linuxserver.io>
 ENV BASE_APTLIST="nginx openssl php5-fpm php5 php5-cli"
 RUN apt-get update && \
 apt-get install $BASE_APTLIST -qy && \
