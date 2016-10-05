@@ -1,4 +1,4 @@
-![http://linuxserver.io](http://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
+![http://linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)
 
 ### This base container is not aimed at public consumption. It exists to serve as a single endpoint for LinuxServer.io containers and is based upon [Phusion](https://github.com/phusion/baseimage-docker).
 
